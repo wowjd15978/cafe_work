@@ -18,6 +18,9 @@ body{
 .d-flex{
     display:flex;
 }
+.d-block{
+    display: block;
+}
 .justify-content-between{
     justify-content: space-between;
 }
@@ -86,8 +89,8 @@ header{
     content: "";
     display: block;
     position: absolute;
-    width: 25px;
-    height: 25;
+    width: -5px;
+    height: -5px;
     right: 0;
     top: -23;
     z-index: 4;
@@ -136,4 +139,53 @@ header{
     padding: 15px;
     background: #efefef;
 }
+
+
 /* ############  SECTION1  ########### */
+.logo{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #ff5656;
+    font-size: 40px;
+    text-shadow: 0 0 10px #ff5656;
+    width: 15%;
+}
+
+.nav{
+    width: 65%;
+}
+
+.nav>li{
+    margin-right: 30px;
+    font-size: 18px;
+    line-height: 1;
+}
+.nav>li:first-child a,
+.nav>li a:hover{
+    color: #ff5656;
+    font-weight: 600;
+}
+.nav>li.last{
+    padding-left: 20px;
+    border-left: 1px solid #dedede;
+}
+.nav>li.last a{
+    color: #ff5656;
+}
+
+form#serachform{
+    width: 20%;
+    text-align: right;
+}
+.selectbox{
+    display: inline-block;
+    position: relative;
+}
+.search-sbox{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #999;
+    width: 120px;
+}
+.search-sbox>a{
+    display: block;
+}

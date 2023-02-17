@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/cafe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/cafe.css">
     <script src="jquery/jquery-3.6.3.min.js"></script>
     <script src="js/cafe.js"></script>
 </head>
@@ -63,7 +63,30 @@
     <!-- /herder top-->
 
     <!-- herder main-->
-    
+    <div class="main-header container d-flex d-block align-items-center ">
+        <a href="" class="logo d-block ">coffee</a>
+        <ul class="nav list-style-none d-flex ">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">팬카페</a></li>
+            <li><a href="#">카페랭킹</a></li>
+            <li><a href="#">니카페</a></li>
+            <li class="last"><a href="#">온라인 교실</a></li>
+        </ul>
+        <form  id="serachform">
+            <div class="selectbox">
+                <a href="#" class="search-select">통합검색</a>
+                <div class="search-sbox">
+                    <a href="#">카페검색</a>
+                    <a href="#">통합검색</a>
+                    <a href="#">카페이름</a>
+                    <a href="#">카페글</a>
+                </div>
+            </div>
+            <input type="text" name="searchtext" id="searchtext" placeholder="검색어를 입력하세요.">
+            <button type="button" class="btn-none"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+    </div>
     <!-- /herder main-->
 </header> 
 </body>
