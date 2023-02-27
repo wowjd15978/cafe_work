@@ -29,4 +29,25 @@ $(function(){
         $(this).addClass('active');
     });
 
+    //슬라이드 쇼
+    setInterval(mySlide, 1300);
+
+    
+
 }); //jqurey
+
+function mySlide(){
+    const eq0 = $('.hero .new:eq(0)'); //이야기 하나
+    const eq1 = $('.hero .new:eq(1)'); //이야기 둘
+    eq1.addClass('zindex').css('opacity', 0).animate({'opacity' : 1}, 1300, function(){ //animate 를 통해 두번째 이야기에 zindex 를 추가하고 제일 앞에 보이게 하며 투명처리
+        eq1.find('li').eq(ranDomList()).addClass('active');
+        eq0.removeClass('zindex');
+        eq0.find('li').removeClass('active');
+        $('.hero').append(eq0);
+        
+    });
+};
+
+function ranDomList(){
+    return Math.floor(Math.random() * 4);
+};
