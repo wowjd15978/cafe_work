@@ -70,6 +70,14 @@ $(function(){
             console.log(error);
         } 
     });
+
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() > 1000){
+            $('.nmgletop').fadeIn();
+        }else{
+            $('.nmgletop').fadeOut();
+        }
+    });
 }); //jqurey
 
 
@@ -108,3 +116,4 @@ function mytime(){
 
     $('.thetime').html(mt);
 }
+
