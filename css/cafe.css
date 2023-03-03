@@ -4,6 +4,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size:16px;
     color:#333;
+    
 }
 .container{
     max-width:1300px;
@@ -671,4 +672,110 @@ p.dg::before{
     background: #8fabe7;
     top: 6px;
     left: 0;
+}
+
+/**************************************  cafe-lanking  ***********************************************/
+
+.lanking strong{
+    font-size: 25px;
+}
+
+.lanking span{
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.tag-text{
+    font-size: 32px;
+}
+
+.lanking-tag{
+    margin-bottom: 15px;
+}
+
+.lanking-tag>.bord{
+    font-weight: 600;
+}
+
+.lanking-tag>a{
+    font-weight: 100;
+}
+
+.margin-left{
+    margin-left: 50px;
+}
+
+.lanking-tag>.link_effect {
+	position: relative;
+	text-decoration: none
+}
+
+.lanking-tag>.link_effect::before{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+	transform-origin: bottom right;
+	transform: scaleX(0);
+	transition: transform 0.5s ease;
+	background-color: #FF5656;
+}
+
+.lanking-tag>.link_effect:hover::before {
+	transform-origin: bottom left;
+	transform: scaleX(1);
+}
+
+/**************************************  footer  ***********************************************/
+
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: url(../img/dogg.png) no-repeat right bottom;
+    background-size: 10%;
+    position: relative;
+}
+
+.footerlogo{
+    display: inline-block;
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    left: -20px;
+
+}
+
+.footerlogo img{
+    max-width: 100%;
+    filter: grayscale(100%);
+}
+
+.footer-nav{
+    display: flex;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.footer-nav li{
+    margin-right: 20px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.footer-nav li:not(:last-child):after{
+    content: '';
+    widows: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 10px;
+    right: -12px;
 }
